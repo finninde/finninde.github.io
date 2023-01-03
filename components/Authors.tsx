@@ -1,4 +1,5 @@
 import { SanityImageSource } from "@sanity/image-url/lib/types/types";
+import Image from "next/image";
 import Link from "next/link";
 import { urlFor } from "../lib/client";
 
@@ -37,7 +38,12 @@ const Author = ({ name, image, links }: AuthorProps) => {
   return (
     <>
       <h3>{name}</h3>
-      <img src={urlFor(image).url()} alt="" />
+      <Image
+        width={300}
+        height={400}
+        src={urlFor(image).width(300).height(400).url()}
+        alt=""
+      />
       <ul>
         {links.map((link, index) => (
           <li key={`authorlinks-${name}-${index}`}>

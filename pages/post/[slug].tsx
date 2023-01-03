@@ -74,5 +74,9 @@ export const getStaticProps: GetStaticProps<{}> = async (ctx) => {
 	"cudoz":cudoz[]->{image, links, name}
 	}[0]`
   );
-  return { props: { blog: blog } };
+  return {
+    props: {
+      blog: blog,
+    },
+  };
 };
