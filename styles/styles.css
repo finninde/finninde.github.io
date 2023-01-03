@@ -1,0 +1,155 @@
+@font-face {font-family: 'DejaVuSans';
+	src: url('/fonts/DejaVuSans.woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+Html {
+	font-size: 10px;
+	margin: 2rem;
+} 
+ 
+h1 {
+	font-size: 5.2rem;
+}
+
+h2 {
+	font-size: 3.8rem;
+}
+
+h3 {
+	font-size: 2.8rem; 
+}
+
+p {
+	font-family: "DejaVuSans", sans-serif;
+	font-size: 1.6rem;
+}
+
+ul {
+	font-family: "DejaVuSans", sans-serif;
+	font-size: 2rem;
+}
+	
+/*
+ Gruvbox colors by morhetz
+ https://github.com/morhetz/gruvbox/
+*/
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #282828; /* base00 */
+	font-family: Monaco, Consolas, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	font-size: 1.4rem;
+	line-height: 1.5;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	background: #fff; /* base02 */
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	background: #fff; /* base02 */
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background-color: #fbf1c7;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #928374; /* base1 */
+}
+
+.token.punctuation {
+	color: #3c3836; /* base01 */
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #076678; /* blue */
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.url,
+.token.inserted {
+	color: #458588; /* cyan */
+}
+
+.token.entity {
+	color: #fff; /* base00 */
+	background: #fff; /* base2 */
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #79740e; /* green */
+}
+
+.token.function,
+.token.class-name {
+	color: #b57614; /* yellow */
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #d79921; /* orange */
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
