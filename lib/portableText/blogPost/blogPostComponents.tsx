@@ -7,8 +7,8 @@ const blogPostComponents = {
     image: ({ value }: { value: SanityImageSource }) => (
       <img src={urlFor(value).url()} alt="" />
     ),
-    code: ({ value }: { value: { code: string } }) => (
-      <Code code={value.code} />
+    code: ({ value }: { value: { code: string; language: string } }) => (
+      <Code language={value.language} code={value.code} />
     ),
   },
 };

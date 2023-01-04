@@ -35,15 +35,11 @@ const Authors = ({ authorHeader, authors }: AuthorsProps) => {
 export default Authors;
 
 const Author = ({ name, image, links }: AuthorProps) => {
+  const optimizeMe = urlFor(image).width(300).height(400).url();
   return (
     <>
       <h3>{name}</h3>
-      <Image
-        width={300}
-        height={400}
-        src={urlFor(image).width(300).height(400).url()}
-        alt=""
-      />
+      <Image width={300} height={400} src={optimizeMe} alt="" />
       <ul>
         {links.map((link, index) => (
           <li key={`authorlinks-${name}-${index}`}>

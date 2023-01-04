@@ -58,12 +58,12 @@ pre[class*="language-"] {
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-	background: #fff; /* base02 */
+	background: #d5c4a1; /* base02 */
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
-	background: #fff; /* base02 */
+	background: #d5c4a1; /* base02 */
 }
 
 /* Code blocks */
@@ -121,8 +121,8 @@ pre[class*="language-"] {
 }
 
 .token.entity {
-	color: #fff; /* base00 */
-	background: #fff; /* base2 */
+	color: #fbf1c7; /* base00 */
+	background: #d5c4a1; /* base2 */
 }
 
 .token.atrule,
